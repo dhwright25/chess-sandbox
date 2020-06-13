@@ -1,8 +1,11 @@
 {
-  "screen-width" : 1920,
-  "screen-height": 1080,
+  "screen-width" : 640,
+  "screen-height": 480,
+  "fps": 60,
   "board-size": 8,
-  "tile-size": 100,
-  "board-center-x": 960,
-  "board-center-y": 540
+  "tile-size": 40,
+  "board-center-x": 320,
+  "board-center-y": 240,
+  "stats-x": 10,
+  "stats-y": 0
 }
