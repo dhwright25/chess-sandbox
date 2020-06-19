@@ -75,16 +75,14 @@ def loop():
         events = pygame.event.get()
         for event in events:
             if event.type == pygame.QUIT:
-                break
+                pygame.quit()
+                quit()
         screen.fill(pygame.Color("dimgray"))  # clear screen
         board = create_board(config['board-size'], config['tile-size'])
         screen.blit(board, board.get_rect(center=(config['board-center-x'], config['board-center-y'])))
         screen.blit(update_stats(), (config['stats-x'], config['stats-y']))
         test_drawing_pieces(screen, piece_sprites, config['piece-width'], config['piece-height'])
         pygame.display.update()
-
-    pygame.quit()
-    quit()
 
 
 init()
