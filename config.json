@@ -3,9 +3,14 @@
   "screen-height": 480,
   "fps": 60,
   "board-size": 8,
-  "tile-size": 40,
+  "tile-size": 52,
   "board-center-x": 320,
   "board-center-y": 240,
   "stats-x": 10,
-  "stats-y": 0
+  "stats-y": 0,
+  "pieces-filename": "assets/chess-pieces.png",
+  "piece-width": 52,
+  "piece-height": 52,
+  "font": "Arial",
+  "font-size": 18
 }
