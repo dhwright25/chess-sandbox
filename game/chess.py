@@ -1,8 +1,8 @@
 import json
 import pygame
-from Player import Player
+from game.player import Player
 
-with open('config.json') as f:
+with open('game/config.json') as f:
     config = json.load(f)
 
 
@@ -21,12 +21,6 @@ def create_board(size, tile_size):
             tile_count += 1
         tile_count -= 1
     return chessboard
-
-
-def update_stats():
-    fps = str(int(clock.get_fps()))
-    fps_text = font.render("FPS: " + str(fps), 1, pygame.Color("red"))
-    return fps_text
 
 
 def load_pieces(filename, width, height, x_offset=0, y_offset=0):
