@@ -1,7 +1,10 @@
 {
+  "title": "Chess Sandbox",
   "screen-width" : 640,
   "screen-height": 480,
-  "fps": 60,
+  "fps": 100,
+  "background-color": "dimgray",
+  "stats-color": "red",
   "board-size": 8,
   "tile-size": 52,
   "board-center-x": 320,
@@ -12,5 +15,10 @@
   "piece-width": 52,
   "piece-height": 52,
   "font": "Arial",
-  "font-size": 18
+  "font-size": 18,
+  "key-binds": {
+      "Q": "stop",
+      "q": "stop",
+      "t": "toggle_stats"
+  }
 }
