@@ -1,4 +1,4 @@
-from Piece import Piece
+from game.piece import Piece
 
 starting_positions = {
     "black": [Piece(1, 1, "r"), Piece(1, 2, "n"), Piece(1, 3, "b"), Piece(1, 4, "k"), Piece(1, 5, "q"),
@@ -15,10 +15,20 @@ starting_positions = {
 class Player:
     def __init__(self, color):
         self.color = color
-        if self.color == "b":
-            self.pieces = starting_positions["black"]
-        else:
-            self.pieces = starting_positions["white"]
+        self.alive = True
 
     def __repr__(self):
         return f"Player({self.color}, {self.pieces})"
+
+    def is_winner(self):
+        pass
+
+class PlayerController:
+    def __init__(self):
+        pass
+
+    def update(self):
+        pass
+
+    def draw(self):
+        pass
